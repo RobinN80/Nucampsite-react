@@ -200,6 +200,16 @@ class Contact extends Component {
                       validEmail,
                     }}
                   />
+                  <Errors
+                    className="text-danger"
+                    model=".email"
+                    show="touched"
+                    component="div"
+                    messages={{
+                      required: "Required",
+                      validEmail: "Invalid email address",
+                    }}
+                  />
                 </Col>
               </Row>
               <Row className="form-group">
